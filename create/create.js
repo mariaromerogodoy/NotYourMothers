@@ -104,6 +104,7 @@ for (const button of curlButtons) {
     console.log(event.target.dataset.img);
     const img = document.getElementById("wavyImg");
     img.src = `../images/${event.target.dataset.img}.png`;
+
     // reapeat 105/106 but do it for the background img
     for (const button of curlButtons) {
       button.classList.remove("clicked");
