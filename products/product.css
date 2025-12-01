@@ -1,0 +1,42 @@
+body {
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px black;
+  padding: 20px;
+  width: 25%;
+  margin: 10px 0;
+}
+
+.label {
+  position: relative;
+  width: calc(100%-20px);
+}
+
+.label img {
+  max-width: 100%;
+}
+
+.volDef {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.category {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.hold {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
