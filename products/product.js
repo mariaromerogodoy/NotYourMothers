@@ -44,8 +44,9 @@ fetch(opensheet_uri)
 function propertyToImg(text) {
   const dict = {
     wavy: "wavy",
-    "curly, wavy": "wavycurl",
+    "Wavy Curly": "wavycurl",
     coily: "coily",
+    "Curly Coily": "curlcoil",
     ALL: "all",
     "Leave-In": "leavein",
     "Curl Cream": "cream",
@@ -59,23 +60,23 @@ function propertyToImg(text) {
 function createCard(product) {
   const html = `
     <div class="card">
-    <p>product: ${product.product}</p>
-    <p>category: ${product.category}</p>
-    <p>curl: ${product.curl}</p>
-    <p>hold: ${product.hold}</p>
-    <p>volDef ${product.volDef}:</p>
+    <p>Product: ${product.Product}</p>
+    <p>Category: ${product.Category}</p>
+    <p>Curl: ${product.Curl}</p>
+    <p>Hold: ${product.Hold}</p>
+    <p>Volume Definition: ${product.volDef}</p>
     <div class="label"> 
           <img class="background" src="../images/${propertyToImg(
-            product.curl
+            product.Curl
           )}.png" />
                      <img class="volDef" src="../images/${propertyToImg(
                        product.volDef
                      )}.png" />
                      <img class="category" src="../images/${propertyToImg(
-                       product.category
+                       product.Category
                      )}.png" />
                      <img class="hold" src="../images/${propertyToImg(
-                       product.hold
+                       product.Hold
                      )}.png" />
                      
     </div>

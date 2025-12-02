@@ -1,18 +1,23 @@
 body {
-  background-color: blue;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   font-family: "apparat-cond-light", sans-serif;
   font-weight: 400;
   font-style: normal;
+  overscroll-behavior: none;
 }
 
 .card {
   background-color: white;
-  padding: 20px;
-  width: 25%;
+  border: 1px solid blue;
+  color: blue;
+  padding: 12px;
+  width: 28%;
   margin: 10px 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .label {
