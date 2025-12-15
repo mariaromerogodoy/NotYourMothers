@@ -1,0 +1,83 @@
+body {
+  background-color: #0000ff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-family: "apparat-cond-light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overscroll-behavior: none;
+}
+
+.icon {
+  background-color: #fff;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 74px;
+  text-align: center;
+  color: #0000ff;
+  border: 1px solid #0000ff;
+  font-size: 16px;
+  cursor: default;
+  position: sticky;
+  z-index: 6;
+}
+
+.icon:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #0000ff;
+  color: blue;
+  padding: 12px;
+  width: 28%;
+  margin: 10px 20px;
+}
+
+.label {
+  position: relative;
+  width: 100%;
+}
+
+.label img.background {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.label img.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.label img.curlOverlay {
+  z-index: 3;
+}
+
+.label img.volDef {
+  z-index: 2;
+}
+
+.label img.category {
+  z-index: 4;
+}
+
+.label img.hold {
+  z-index: 5;
+}

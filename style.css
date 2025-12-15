@@ -13,10 +13,13 @@ body {
   height: 100vh;
   gap: 12px;
 }
-
+.icon:hover {
+  background-color: #0000ff;
+  color: #fff;
+}
 .ui-btn {
   outline: 0;
-  border: 1px solid #000;
+  border: 1px solid #0000ff;
   border-radius: none;
   cursor: pointer;
   display: inline-flex;
@@ -29,12 +32,14 @@ body {
   text-decoration: none;
   transition: all 0.14s ease-out;
   white-space: nowrap;
-  color: black;
+  color: #0000ff;
 }
 
 .ui-btn:hover {
-  box-shadow: 4px 4px 0 #000;
+  box-shadow: 4px 4px 0 #ffffff;
   transform: translate(-4px, -4px);
+  background-color: #0000ff;
+  color: #fff;
 }
 
 .ui-btn:focus-visible {

@@ -1,3 +1,16 @@
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    console.log(
+      "Window resized to:",
+      window.innerWidth,
+      "x",
+      window.innerHeight
+    );
+  }, 200);
+});
+
 const container = document.getElementById("container");
 
 const spreadsheetID = `168pOpWYZ4MBvbZJRitqZOy-_Ok0Hcf2AYqhGGjcQK0I`;
