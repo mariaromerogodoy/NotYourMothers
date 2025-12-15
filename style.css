@@ -3,7 +3,9 @@ body {
   overscroll-behavior: none;
   margin: 10px;
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "apparat-cond-light", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .button-container {
@@ -34,7 +36,7 @@ body {
 
 .ui-btn:hover {
   box-shadow: 4px 4px 0 #ffffff;
-  transform: translate(-4px, -4px);
+  /* transform: translate(-4px, -4px); */
   background-color: #0000ff;
   color: #fff;
 }
