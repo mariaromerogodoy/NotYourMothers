@@ -96,6 +96,33 @@ h2 {
   position: relative;
 }
 
+.container div.content .images img {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#wavyImg {
+  z-index: 1;
+}
+
+#volumeImg {
+  z-index: 2;
+}
+
+#wavy1Img {
+  z-index: 3;
+}
+
+#productImg {
+  z-index: 4;
+}
+
+#lightImg {
+  z-index: 5;
+}
+
 button.clicked {
   background-color: blue;
   color: #ffffff;

@@ -101,6 +101,21 @@ console.log(curlButtons);
 
 for (const button of curlButtons) {
   button.addEventListener("click", function (event) {
+    const base = document.getElementById("wavyImg"); // wavy/curly/coily base
+    const overlay = document.getElementById("wavy1Img"); // wavy1/curly1/coily1 overlay
+
+    const name = event.target.dataset.img; // ex: "curly", "coily", "all"
+
+    base.src = `../images/${name}.png`;
+    overlay.src = `../images/${name}1.png`; // ex: "curly1.png", "coily1.png"
+
+    for (const b of curlButtons) b.classList.remove("clicked");
+    event.target.classList.add("clicked");
+  });
+}
+
+for (const button of curlButtons) {
+  button.addEventListener("click", function (event) {
     console.log(event.target.dataset.img);
     const img = document.getElementById("wavyImg");
     img.src = `../images/${event.target.dataset.img}.png`;
